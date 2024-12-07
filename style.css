@@ -1,0 +1,66 @@
+*{
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Make body take full viewport height */
+}
+
+.form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(224, 224, 224, 0.913); /* Optional shadow for better visuals */
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.heading h1{
+    font-size: 50px;
+    text-align: center;
+}
+.main input{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.submit button{
+    width: 40vw;
+    height: 5vh;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.submit button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.main .error{
+    color: brown;
+}
+
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.error input{
+    border-color: red;
+}
